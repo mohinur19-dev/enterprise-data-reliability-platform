@@ -32,7 +32,54 @@ An enterprise-grade platform designed to improve trust in data through:
 
 ## Architecture
 
-Coming Soon
+enterprise-data-reliability-platform
+│
+├── README.md
+├── docs
+│   ├── requirements.md
+│   ├── design.md
+│   └── roadmap.md
+│
+├── architecture
+│   ├── high-level-design.drawio
+│   ├── low-level-design.drawio
+│   └── diagrams
+│
+├── data-quality
+│   ├── great_expectations
+│   ├── soda
+│   └── custom_rules
+│
+├── observability
+│   ├── metrics
+│   ├── logs
+│   └── tracing
+│
+├── lineage
+│   ├── openmetadata
+│   └── datahub
+│
+├── monitoring
+│   ├── prometheus
+│   └── grafana
+│
+├── alerting
+│   ├── slack
+│   ├── email
+│   └── teams
+│
+├── infrastructure
+│   ├── terraform
+│   ├── kubernetes
+│   └── docker
+│
+├── dashboards
+│
+├── notebooks
+│
+├── tests
+│
+└── scripts
 
 ## Roadmap
 
