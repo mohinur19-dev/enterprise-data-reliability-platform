@@ -32,9 +32,14 @@ An enterprise-grade platform designed to improve trust in data through:
 
 ## Architecture
 
+## Architecture
+
+```text
 enterprise-data-reliability-platform
 │
 ├── README.md
+├── requirements.txt
+│
 ├── docs
 │   ├── requirements.md
 │   ├── design.md
@@ -45,52 +50,30 @@ enterprise-data-reliability-platform
 │   ├── low-level-design.drawio
 │   └── diagrams
 │
-├── data-quality
-│   ├── great_expectations
-│   ├── soda
-│   └── custom_rules
+├── ingestion
+│   └── bronze_ingestion.py
+│
+├── transformations
+│   ├── silver_transform.py
+│   └── gold_transform.py
+│
+├── quality
+│   ├── expectations.py
+│   └── rules.yaml
 │
 ├── observability
-│   ├── metrics
-│   ├── logs
-│   └── tracing
-│
-├── lineage
-│   ├── openmetadata
-│   └── datahub
-│
-├── monitoring
-│   ├── prometheus
-│   └── grafana
+│   ├── metrics.py
+│   └── sla_monitor.py
 │
 ├── alerting
-│   ├── slack
-│   ├── email
-│   └── teams
+│   └── slack_alert.py
 │
-├── infrastructure
-│   ├── terraform
-│   ├── kubernetes
-│   └── docker
-│
+├── metadata
+├── lineage
 ├── dashboards
-│
 ├── notebooks
-│
 ├── tests
-│
-└── scripts
-
-## Roadmap
-
-Phase 1
-- Data Quality Engine
-
-Phase 2
-- Observability Layer
-
-Phase 3
-- Lineage Integration
-
-Phase 4
-- AI-based RCA
+├── scripts
+├── docker
+└── infrastructure
+```
