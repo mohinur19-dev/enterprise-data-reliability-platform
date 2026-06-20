@@ -1,0 +1,7 @@
+pyspark
+delta-spark
+pandas
+pytest
+great-expectations
+prometheus-client
+requests

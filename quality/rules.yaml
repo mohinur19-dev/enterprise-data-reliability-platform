@@ -1,0 +1,4 @@
+rules:
+  - customer_id_not_null
+  - unique_email
+  - age_greater_than_zero
